@@ -6,9 +6,8 @@ server:
 spring:
   datasource:
     url: "jdbc:mysql://localhost:3306/bookteria_identity"
-    driverClassName: "com.mysql.cj.jdbc.Driver"
-    username: root
-    password: root
+    username: springuser
+    password: admin
   jpa:
     hibernate:
       ddl-auto: update
