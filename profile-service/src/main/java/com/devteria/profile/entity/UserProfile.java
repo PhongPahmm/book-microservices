@@ -7,6 +7,8 @@ import org.springframework.data.neo4j.core.schema.Id;
 import org.springframework.data.neo4j.core.schema.Node;
 import org.springframework.data.neo4j.core.schema.Property;
 
+import java.time.LocalDate;
+
 @Node("user_profile")
 @Getter
 @Setter
@@ -21,4 +23,8 @@ public class UserProfile {
 
     @Property("userId")
     String userId;
+    String firstName;
+    String lastName;
+    LocalDate dob;
+    String address;
 }
