@@ -22,6 +22,7 @@ public class UserProfileService {
         userProfile = userProfileRepository.save(userProfile);
         return userProfileMapper.toUserProfileResponse(userProfile);
     }
+
     public UserProfileResponse getUserProfile(String id){
         return userProfileMapper.toUserProfileResponse(userProfileRepository.findById(id)
                 .orElseThrow(()-> new RuntimeException("User profile not found")));
