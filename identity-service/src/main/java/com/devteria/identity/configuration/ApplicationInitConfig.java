@@ -1,7 +1,6 @@
 /* (C)2024 */
 package com.devteria.identity.configuration;
 
-import java.time.LocalDate;
 import java.util.HashSet;
 
 import com.devteria.identity.constant.PredefinedRole;
@@ -47,9 +46,6 @@ public class ApplicationInitConfig {
                         User.builder()
                                 .username("admin")
                                 .password(passwordEncoder.encode("admin"))
-                                .firstName("Admin")
-                                .lastName("User")
-                                .dob(LocalDate.of(2003, 10, 18))
                                 .roles(role)
                                 .build();
 
